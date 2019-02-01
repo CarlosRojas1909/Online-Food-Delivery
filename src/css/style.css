@@ -120,6 +120,31 @@ h2:after { /*always after using :after we have to use content: property;*/
     margin-bottom: 10px;
 }
 
+.icon-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #e67e22;
+    font-size: 120%;
+    margin-right: 10px;
+
+    /*secrets to align text and icons*/
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+}
+
+/*==========================================================================*/
+/*                          LINKS*/
+/*--------------------------------------------------------------------------*/
+
+a:link,
+a:active {
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+}
 
 /*==========================================================================*/
 /*                          BUTTONS */
@@ -213,7 +238,7 @@ header {
 
 .main-nav li a:link,
 .main-nav li a:visited {
-    padding: 8px, 0;
+    padding: 8px 0;
     color: #fff;
     text-decoration: none;
     text-transform: uppercase;
@@ -324,6 +349,15 @@ header {
 
 }
 
+/*==========================================================================*/
+/*                         CITIES */
+/*--------------------------------------------------------------------------*/
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
 
 
 
