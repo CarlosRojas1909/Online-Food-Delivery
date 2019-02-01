@@ -171,7 +171,6 @@ h2:after { /*always after using :after we have to use content: property;*/
     color: #fff;
 
 }
-
 /*==========================================================================*/
 /*                         HEADER */
 /*--------------------------------------------------------------------------*/
@@ -278,7 +277,7 @@ header {
 /*--------------------------------------------------------------------------*/
 
 .section-steps {
-    background-color: #f4f4f4;
+    background-color: #f4f4f4;/* adds a grey color to separate from the next section wchich is white*/
 }
 
 .step-box:first-child {
