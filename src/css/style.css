@@ -7,13 +7,15 @@
     box-sizing: border-box;
 }
 
-html {
+html,
+body {
     background-color: #fff;
     color: #555;
     font-family:  'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 .clearfix {
@@ -50,10 +52,7 @@ section {
     padding: 1%;
 }
 
-.box p {
-    font-size: 90%;
-    line-height: 145%;
-}
+
 /*==========================================================================*/
 /*                           HEADINGS */
 /*--------------------------------------------------------------------------*/
@@ -109,6 +108,12 @@ h2:after { /*always after using :after we have to use content: property;*/
     width: 70%;
     margin-left: 15%;
 }
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
 
 /*==========================================================================*/
 /*                          ICONS */
@@ -320,13 +325,18 @@ header {
     background-color: #f4f4f4;/* adds a grey color to separate from the next section wchich is white*/
 }
 
-.step-box:first-child {
-    text-align: right;
-    padding-right: 3%;
+.steps-box {
     margin-top: 30px;
 }
 
+.step-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    /* margin-top: 30px; */
+}
+
 .step-box:last-child {
+    text-align: left;
     padding-left: 3%;
     margin-top: 70px;
 }
@@ -345,16 +355,16 @@ header {
 
 .works-step div {
     color: #e67e22;
-    border: 2px solid #e67e22;
-    display: inline-block;
-    border-radius: 50%;
+    font-size: 150%;
     height: 55px;
     width: 55px;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    display: inline-block;
     text-align: center;
-    padding: 5px;
-    float: left;
-    font-size: 150%;
     margin-right: 25px;
+    float: left;
+    padding: 5px;
 }
 
 .btn-app:link,
@@ -378,6 +388,10 @@ header {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
+}
+
+.city-feature {
+    margin-bottom: 5px;
 }
 
 /*==========================================================================*/
