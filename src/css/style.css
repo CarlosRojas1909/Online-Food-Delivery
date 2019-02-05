@@ -151,7 +151,7 @@ a:visited {
     padding-bottom: 1px;
     border-bottom: 1px solid #e67e22;
     -webkit-transition: border-bottom 0.2s, color 0.2s;
-    transition: border-bottom 0.2s, color 0.2s
+    transition: border-bottom 0.2s, color 0.2s;
 }
 
 a:hover,
@@ -205,8 +205,7 @@ input[type=submit]:active  {
 }
 
 .btn-full:hover, 
-.btn-full:active,
-input[type=submit] {
+.btn-full:active {
     border: 1px solid #cf6d17;
 
 
@@ -241,7 +240,7 @@ header {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
 }
-/* Main navi*/
+
 .logo {
     height: 100px;
     width: auto;
@@ -254,10 +253,12 @@ header {
     height: 50px;
     width: auto;
     float: left;
-    margin-top: 5px 0;
+    margin: 5px 0;
 }
 
 .logo-black {display: none;}
+
+/* Main navi*/
 
 .main-nav {
     float: right;
@@ -372,13 +373,13 @@ header {
     margin-top: 30px;
 }
 
-.step-box:first-child {
+.steps-box:first-child {
     text-align: right;
     padding-right: 3%;
     /* margin-top: 30px; */
 }
 
-.step-box:last-child {
+.steps-box:last-child {
     text-align: left;
     padding-left: 3%;
     margin-top: 70px;
@@ -399,8 +400,8 @@ header {
 .works-step div {
     color: #e67e22;
     font-size: 150%;
-    height: 55px;
-    width: 55px;
+    height: 54px;
+    width: 54px;
     border: 2px solid #e67e22;
     border-radius: 50%;
     display: inline-block;
@@ -652,7 +653,28 @@ footer p {
     margin-top: 20px;
 }
 
+/*==========================================================================*/
+/*                         Animations */
+/*--------------------------------------------------------------------------*/
 
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.js--wp-4 {
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
+.js--wp-1.animated, 
+.js--wp-2.animated,
+.js--wp-3.animated {
+    opacity: 1;
+}
 
 
 
